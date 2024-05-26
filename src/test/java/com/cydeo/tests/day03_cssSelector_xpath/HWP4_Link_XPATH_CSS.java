@@ -1,6 +1,6 @@
 package com.cydeo.tests.day03_cssSelector_xpath;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +13,7 @@ public class HWP4_Link_XPATH_CSS {
         //PS: Locate “Home” link using “className” locator
 
         //1- Open a Chrome browser
-        WebDriverManager.chromedriver().setup();
+       // WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 

@@ -1,6 +1,6 @@
 package com.cydeo.tests.day02_locators_getText_getAttribute;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +12,7 @@ public class HWP4_Class_Locator_Practice {
         //PS: Locate “Home” link using “className” locator
 
         //1- Open a Chrome browser
-        WebDriverManager.chromedriver().setup();
+       // WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 

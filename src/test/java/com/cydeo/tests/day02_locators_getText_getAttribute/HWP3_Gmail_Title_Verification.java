@@ -1,6 +1,6 @@
 package com.cydeo.tests.day02_locators_getText_getAttribute;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,7 @@ public class HWP3_Gmail_Title_Verification {
 
         //TC #3: Back and forth navigation
         //1- Open a Chrome browser
-        WebDriverManager.chromedriver().setup();
+       // WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 

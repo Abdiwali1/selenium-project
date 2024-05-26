@@ -1,6 +1,6 @@
 package com.cydeo.tests.day02_locators_getText_getAttribute;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +12,7 @@ public class HWP1_Etsy_Search_Title {
         //HWP #1: Etsy Title Verification
         //1. Open Chrome browser
         //Setting up our chromedriver using WebDriverManager
-        WebDriverManager.chromedriver().setup();
+        //WebDriverManager.chromedriver().setup();
 
         //Creating a new ChromeDriver and storing it in "driver"
         WebDriver driver = new ChromeDriver();
