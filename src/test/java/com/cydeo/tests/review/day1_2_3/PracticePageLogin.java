@@ -42,6 +42,7 @@ public class PracticePageLogin {
             System.out.println("Text verification is failed!");
         }
 
+        driver.quit();
 
     }
 }
