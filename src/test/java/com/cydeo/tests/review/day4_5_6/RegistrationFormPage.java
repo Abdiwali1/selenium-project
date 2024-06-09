@@ -1,5 +1,6 @@
 package com.cydeo.tests.review.day4_5_6;
 
+import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -15,7 +16,7 @@ public class RegistrationFormPage {
     @BeforeMethod
     public void setup(){
         // 1. Open Chrome browser
-        driver = new ChromeDriver();
+        driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
