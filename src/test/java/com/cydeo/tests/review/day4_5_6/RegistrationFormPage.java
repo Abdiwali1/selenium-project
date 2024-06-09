@@ -3,6 +3,7 @@ package com.cydeo.tests.review.day4_5_6;
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -73,7 +74,9 @@ public class RegistrationFormPage {
 
 
         // 9. Click to "Male" from Gender
-
+        WebElement maleBtn = driver.findElement(By.cssSelector("input[value='male']"));
+        maleBtn.click();
+        Assert.assertTrue(maleBtn.isSelected(),"Male button is not selected!");
 
         // 10. Enter Date of birth "01/28/1990"
 
