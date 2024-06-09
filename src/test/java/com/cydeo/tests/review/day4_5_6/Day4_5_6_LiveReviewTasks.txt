@@ -1,4 +1,4 @@
-Topics:  TestNG, Checkboxes, Radio Buttons, Dropdown, Alert, Windows Handle
+Topics:  TestNG, Checkboxes, Radio Buttons, Dropdown, Alert
 
 // TC#1: Registration Form Page Testing
 
