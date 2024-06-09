@@ -28,7 +28,7 @@ public class T1_WebTable_Order_Verify {
     @Test
     public void order_verify_name_test(){
 
-        //2. VerifyBob’s name is listed as expected.
+        //2. VerifyBob’s name is listed as expected
         //below locator is locating me the Bob Martin's cell as where it is currently stored.
         //table[@class='SampleTable']/tbody/tr[7]/td[2]
 
