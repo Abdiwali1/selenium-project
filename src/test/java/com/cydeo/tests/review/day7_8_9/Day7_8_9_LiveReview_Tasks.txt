@@ -1,0 +1,64 @@
+
+day7_8_9 Live Review Tasks
+
+Topics: Alert, Iframe, WebTable, HardVsSoftAssertions
+
+
+
+// TC#3 : Alert practice
+    // 1. Open browser
+    // 2. Go to website: https://practice.cydeo.com/javascript_alerts
+    // 3. Click to “Click for JS Prompt” button
+    // 4. Send “hello” text to alert
+    // 5. Click to OK button from the alert
+    // 6. Verify “You entered: hello” text is displayed.
+
+----------------------------------------------------------------
+
+// TC : Iframe practice
+    // 1. Users are already login and on the homepage of CRM app
+    // 2. Users click the MESSAGE tab
+    // 3. Users write test message
+    // 4. Users click the SEND button
+    // 5. Verify the message is displayed on the feed
+
+----------------------------------------------------------------
+
+// TC#4 : Windows handle practice
+    //    1. Open browser
+    //    2. Go to website: https://demoqa.com/browser-windows
+    //    3. Click on New Tab button
+    //    4. Click on New Window button
+    //    5. Click on New Window Message button
+    //    6. Print out each window title
+
+----------------------------------------------------------------
+
+// TC#2 : Web table practice
+    // 1. Open Chrome browser
+    // 2. Go to https://practice.cydeo.com/tables
+    // 3. Print table data as a single String, not so common, but useful sometimes
+    // 4. verify tconway@earthlink.net is anywhere in the table
+    // 5. print all column names in single line
+    // 6. print each column name in separate lines using a loop and findElements method
+    // 7. verify Tim due money is $50.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
