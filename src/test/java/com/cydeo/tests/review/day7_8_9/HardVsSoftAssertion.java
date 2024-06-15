@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.util.List;
 
@@ -57,7 +58,9 @@ public class HardVsSoftAssertion extends TestBase {
         System.out.println("table1.getText() = " + table1.getText());
 
         // 4. verify tconway@earthlink.net is anywhere in the table
-        Assert.assertTrue(table1.getText().contains("tconway@earthlink.net..."));
+        SoftAssert softAssert = new SoftAssert();
+
+        softAssert.assertTrue(table1.getText().contains("tconway@earthlink.net..."),"tconway@earthlink.net is not in Table");
 
         // 5. print all column names in single line
         WebElement colNames = driver.findElement(By.xpath("//table[@id='table1']/thead/tr"));
@@ -74,7 +77,10 @@ public class HardVsSoftAssertion extends TestBase {
         WebElement timDue = driver.findElement(By.xpath("//table[@id='table1']//td[.='tconway@earthlink.net']/following-sibling::td[1]"));
         WebElement timDue2 = driver.findElement(By.xpath("//table[@id='table1']//td[.='tconway@earthlink.net']/../td[.='$50.00']"));
 
-        Assert.assertEquals(timDue.getText(),"$50.00.");
+
+       softAssert.assertEquals(timDue.getText(),"$50.00","Tim due money is not $50.00");
+
+       softAssert.assertAll();
 
 
     }
