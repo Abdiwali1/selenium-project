@@ -5,6 +5,8 @@ import com.cydeo.utilities.CRM_Utilities;
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -36,6 +38,10 @@ public class IframePractice extends TestBase {
         driver.findElement(By.id("blog-submit-button-save")).click();
 
         // 5. Verify the message is displayed on the feed
+    //    WebElement feedMsg = driver.findElement(By.className("feed-post-text-block-inner-inner"));
+        WebElement feedMsg2 = driver.findElement(By.xpath("//div[contains(@id,'blog_post_body_')]"));
+
+        Assert.assertEquals(feedMsg2.getText(),"whatever");
 
     }
 
