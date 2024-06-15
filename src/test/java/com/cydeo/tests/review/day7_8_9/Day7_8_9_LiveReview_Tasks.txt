@@ -5,7 +5,7 @@ Topics: Alert, Iframe, WebTable, HardVsSoftAssertions
 
 
 
-// TC#3 : Alert practice
+// TC : Alert practice
     // 1. Open browser
     // 2. Go to website: https://practice.cydeo.com/javascript_alerts
     // 3. Click to “Click for JS Prompt” button
@@ -24,7 +24,7 @@ Topics: Alert, Iframe, WebTable, HardVsSoftAssertions
 
 ----------------------------------------------------------------
 
-// TC#4 : Windows handle practice
+// TC : Windows handle practice
     //    1. Open browser
     //    2. Go to website: https://demoqa.com/browser-windows
     //    3. Click on New Tab button
@@ -34,7 +34,7 @@ Topics: Alert, Iframe, WebTable, HardVsSoftAssertions
 
 ----------------------------------------------------------------
 
-// TC#2 : Web table practice
+// TC : Web table practice
     // 1. Open Chrome browser
     // 2. Go to https://practice.cydeo.com/tables
     // 3. Print table data as a single String, not so common, but useful sometimes
