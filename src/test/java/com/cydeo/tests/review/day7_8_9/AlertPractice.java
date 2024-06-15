@@ -34,6 +34,7 @@ public class AlertPractice {
 
         // 4. Send “hello” text to alert
         Alert alert = driver.switchTo().alert();
+        System.out.println("alert.getText() = " + alert.getText());
 
         alert.sendKeys("hello");
 
