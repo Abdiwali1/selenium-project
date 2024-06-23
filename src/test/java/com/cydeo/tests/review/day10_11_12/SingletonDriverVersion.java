@@ -16,15 +16,14 @@ public class SingletonDriverVersion {
 
     @Test (priority = 2)
     public void yahooTitle(){
-        Driver.getDriver().get("https://yahoo.com");
+        Driver.getDriver().get("https://amazon.com");
         System.out.println("yahoo test driver = " + ((RemoteWebDriver) Driver.getDriver()).getSessionId());
 
     }
 
-
     @Test (priority = 3)
     public void etsyTitle(){
-        Driver.getDriver().get("https://etsy.com");
+        Driver.getDriver().get("https://practice.cydeo.com/");
         System.out.println("etsy test driver = " + ((RemoteWebDriver) Driver.getDriver()).getSessionId());
 
     }

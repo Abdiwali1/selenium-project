@@ -32,13 +32,13 @@ public class Old_driver_Version {
 
     @Test (priority = 2)
     public void yahooTitle(){
-        driver.get("https://yahoo.com");
+        driver.get("https://amazon.com");
         System.out.println("yahoo test driver = " + ((RemoteWebDriver) driver).getSessionId());
     }
 
     @Test (priority = 3)
     public void etsyTitle(){
-        driver.get("https://etsy.com");
+        driver.get("https://practice.cydeo.com/");
         System.out.println("etsy test driver = " + ((RemoteWebDriver) driver).getSessionId());
     }
 
