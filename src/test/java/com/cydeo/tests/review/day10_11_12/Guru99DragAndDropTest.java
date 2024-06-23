@@ -4,6 +4,7 @@ import com.cydeo.tests.base.BaseTest;
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.testng.annotations.Test;
 
 public class Guru99DragAndDropTest extends BaseTest {
@@ -23,6 +24,7 @@ public class Guru99DragAndDropTest extends BaseTest {
         WebElement fiveK = Driver.getDriver().findElement(By.linkText("5000"));
         WebElement amount = Driver.getDriver().findElement(By.id("amt7"));
         actions.dragAndDrop(fiveK,amount).perform();
+
 
     }
 }
