@@ -1,6 +1,7 @@
 package com.cydeo.tests.review.day10_11_12;
 
 import com.cydeo.tests.base.TestBase;
+import com.cydeo.utilities.BrowserUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -27,12 +28,20 @@ public class Guru99UploadTest extends TestBase {
         //5. Verify expected message appeared.
         // Expected: “1 file
         // has been successfully uploaded.
+
+        BrowserUtils.sleep(3);
+
         WebElement resultText = driver.findElement(By.cssSelector("h3[id='res']>center"));
 
-        String expectedText = "1 file has been successfully uploaded.";
+        BrowserUtils.sleep(3);
+
+        String expectedText = "1 file\nhas been successfully uploaded.";
         String actualText = resultText.getText();
 
-        Assert.assertTrue(resultText.isDisplayed());
+        Assert.assertTrue(resultText.isDisplayed()); // for text comparison do not use isDisplayed(), it will ignore how text is appearing
+
+        Assert.assertEquals(actualText,expectedText);
+
 
 
     }
